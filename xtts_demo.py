@@ -26,6 +26,10 @@ from TTS.tts.models.xtts import Xtts
 from TTS.tts.configs.xtts_config import XttsConfig
 from TTS.tts.models.xtts import Xtts
 
+#torch.cuda.set_per_process_memory_fraction(0.5, 0)
+# Adjust the fraction as needed
+
+
 # Clear logs
 def remove_log_file(file_path):
      log_file = Path(file_path)
